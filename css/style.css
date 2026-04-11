@@ -274,6 +274,14 @@ body.has-alert .site-header { top: 0; }
 .section--navy h2 { color: #fff; }
 .section--navy p { color: #dfe3ee; }
 .section--navy a { color: var(--amber); }
+/* Button overrides inside navy sections — buttons are <a> tags and would
+   otherwise inherit the amber link color above, making amber-on-amber text
+   invisible until hover. Keep button labels white at rest. */
+.section--navy a.btn--amber,
+.section--navy button.btn--amber { color: #fff; }
+.section--navy a.btn--ghost { color: #fff; }
+.section--navy a.btn--amber:hover { color: #fff; }
+.section--navy a.btn--ghost:hover { color: var(--navy); }
 
 /* ---------- Grids ---------- */
 .grid { display: grid; gap: 24px; }
