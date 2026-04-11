@@ -5,7 +5,7 @@ Static, single-page marketing site for **Paris Roofing Services** (Liberty Hill,
 **Business facts baked into the site:**
 - Owner: Terry Paris (founded 1976, returning to active work)
 - Phone: (512) 740-3215
-- Address: 200 N Bear Creek Rd, Liberty Hill, TX 78642
+- Based in: Liberty Hill, TX (service-area business — **no street address published**)
 - Tagline: *Central Texas Roofing Since 1976*
 - Hook: *We beat any written estimate by $300 — guaranteed*
 
@@ -134,4 +134,4 @@ Once you own `parisroofingservices.com` (or similar):
 
 ## Google Business Profile — the step that cannot be skipped
 
-A website alone won't rank locally. Terry (or Richard on his behalf) has to verify a **Google Business Profile** at `business.google.com`, category *Roofing Contractor*, using the real Liberty Hill address and phone number. Google will mail a postcard or offer phone/video verification — this physical step cannot be automated or skipped. Once verified, paste the GBP URL into `[GBP_LINK]` throughout `index.html`.
+A website alone won't rank locally. Terry (or Richard on his behalf) has to verify a **Google Business Profile** at `business.google.com`, category *Roofing Contractor*. Because Paris Roofing is a **service-area business**, configure GBP to *hide* the street address and list the service-area cities instead — Google still requires a real address during verification (postcard or phone/video), but it will not display publicly. Once verified, paste the GBP URL into `[GBP_LINK]` throughout `index.html`.
