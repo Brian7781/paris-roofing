@@ -194,7 +194,7 @@ body.has-alert .site-header { top: 0; }
   /* Navy fallback first; image layer on top; overlay last (renders on top) */
   background-color: #1a2744;
   background-image:
-    linear-gradient(135deg, rgba(18,26,48,.78), rgba(14,21,40,.88)),
+    linear-gradient(135deg, rgba(18,26,48,.45), rgba(14,21,40,.55)),
     url('../images/hero.jpg');
   background-size: cover, cover;
   background-position: center, center 30%;
@@ -251,7 +251,7 @@ body.has-alert .site-header { top: 0; }
 }
 .section--storm-bg {
   background-image:
-    linear-gradient(180deg, rgba(18,26,48,.94), rgba(26,39,68,.88)),
+    linear-gradient(180deg, rgba(18,26,48,.72), rgba(26,39,68,.68)),
     url('../images/storm-damage.jpg');
   background-size: cover;
   background-position: center;
