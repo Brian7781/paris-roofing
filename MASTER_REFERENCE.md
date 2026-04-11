@@ -101,7 +101,9 @@ Files explicitly ignored by `.gitignore`:
 - **GBP:** Created, verification in progress by Terry from Liberty Hill
 - **Website:** Live at <https://brian7781.github.io/paris-roofing/>
 - **Citations:** Pending GBP verification, then BrightLocal submission
-- **Social media:** About to begin building
+- **Facebook Business Page:** ✅ Created. Owned by Richard's personal Facebook account, managed from the **Paris Roofing** Chrome profile.
+- **Instagram Business Account:** In progress — to be connected to the Facebook Business Page above.
+- **Chrome profile:** Dedicated **"Paris Roofing"** profile exists on Richard's Mac, kept separate from personal Chrome profiles.
 
 ### Next immediate step
 
