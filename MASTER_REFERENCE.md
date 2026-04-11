@@ -60,6 +60,55 @@ Files explicitly ignored by `.gitignore`:
 
 ---
 
+## Social Media Strategy
+
+**Goal:** Build a professional social media presence for Paris Roofing Services that is completely separate from Richard's personal accounts. All social accounts are managed by Richard on Terry's behalf.
+
+**Login for all social platforms:** `parisroofingservicesoftx@gmail.com`
+
+### Platform priority order
+
+1. **Facebook Business Page** — highest priority, feeds neighborhood groups and Marketplace
+2. **Instagram Business Account** — links to Facebook, same login
+3. **Nextdoor Business Profile** — neighborhood-level recommendations, highest purchase intent
+4. **YouTube Channel** — for AI-generated video content (long game)
+5. **TikTok** — skip for now, wrong demographic
+
+### Content strategy
+
+- Before and after job photos from Terry's crews
+- AI-generated talking-head videos using photos of Terry with written scripts — tools to research: **HeyGen**, **D-ID**, **Synthesia**
+- Hail season alerts and storm damage education content
+- Neighborhood-targeted posts in Austin metro Facebook groups
+- Every completed job is potential content
+
+### Account separation strategy
+
+- All Paris Roofing social accounts use `parisroofingservicesoftx@gmail.com`
+- A dedicated Chrome profile called **"Paris Roofing"** lives on Richard's Mac so Paris Roofing accounts never mix with his personal accounts
+- Richard manages all accounts as authorized marketing partner
+
+### AI video plan
+
+- Richard sources photos of Terry and past job photos
+- Scripts are written in Claude.ai
+- AI video tools animate Terry's photo into a talking head with voiceover
+- Combined with real job photos for professional-looking content
+- No requirement for Terry to be on camera or travel anywhere
+
+### Current status
+
+- **GBP:** Created, verification in progress by Terry from Liberty Hill
+- **Website:** Live at <https://brian7781.github.io/paris-roofing/>
+- **Citations:** Pending GBP verification, then BrightLocal submission
+- **Social media:** About to begin building
+
+### Next immediate step
+
+Create a dedicated Chrome profile called **"Paris Roofing"** on this Mac, completely separate from Richard's personal Chrome profile, and open `facebook.com` to begin creating the Facebook Business Page.
+
+---
+
 ## Quick links
 
 - **Live site:** <https://brian7781.github.io/paris-roofing/>
