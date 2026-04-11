@@ -1,0 +1,6 @@
+# Local-only files — never commit
+PRIVATE_CREDENTIALS.txt
+CITATION_SUBMISSIONS.md
+
+# macOS
+.DS_Store
