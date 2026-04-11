@@ -189,11 +189,16 @@ body.has-alert .site-header { top: 0; }
 .hero {
   position: relative;
   color: #fff;
-  padding: 90px 0 110px;
+  padding: 110px 0 130px;
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(18,26,48,.78), rgba(26,39,68,.82)),
-    linear-gradient(160deg, #2b3a5a 0%, #1a2744 40%, #0e1528 100%);
+  /* Navy fallback first; image layer on top; overlay last (renders on top) */
+  background-color: #1a2744;
+  background-image:
+    linear-gradient(135deg, rgba(18,26,48,.78), rgba(14,21,40,.88)),
+    url('../images/hero.jpg');
+  background-size: cover, cover;
+  background-position: center, center 30%;
+  background-repeat: no-repeat, no-repeat;
 }
 .hero__overlay {
   position: absolute; inset: 0;
@@ -240,7 +245,32 @@ body.has-alert .site-header { top: 0; }
   font-size: 1.05rem;
 }
 .section--cream { background: var(--cream-dk); }
-.section--navy { background: var(--navy); color: #f2f4fa; }
+.section--navy {
+  background-color: var(--navy);
+  color: #f2f4fa;
+}
+.section--storm-bg {
+  background-image:
+    linear-gradient(180deg, rgba(18,26,48,.94), rgba(26,39,68,.88)),
+    url('../images/storm-damage.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section--why-bg {
+  position: relative;
+}
+.why-banner {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  margin: 0 0 50px;
+  border: 6px solid #fff;
+}
 .section--navy h2 { color: #fff; }
 .section--navy p { color: #dfe3ee; }
 .section--navy a { color: var(--amber); }
