@@ -102,7 +102,7 @@ Files explicitly ignored by `.gitignore`:
 - **Website:** Live at <https://brian7781.github.io/paris-roofing/>
 - **Citations:** Pending GBP verification, then BrightLocal submission
 - **Facebook Business Page:** ✅ Created. Owned by Richard's personal Facebook account, managed from the **Paris Roofing** Chrome profile.
-- **Instagram Business Account:** In progress — to be connected to the Facebook Business Page above.
+- **Instagram Business Account:** ✅ Created. Username: `@parisroofingservices` · Profile: <https://instagram.com/parisroofingservices> · Category: Roofing Service · Login: `parisroofingservicesoftx@gmail.com` · ⚠️ Facebook Page connection pending (manual step) · ⚠️ Profile picture needed.
 - **Chrome profile:** Dedicated **"Paris Roofing"** profile exists on Richard's Mac, kept separate from personal Chrome profiles.
 
 ### Next immediate step
