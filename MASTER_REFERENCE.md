@@ -98,7 +98,7 @@ Files explicitly ignored by `.gitignore`:
 
 ### Current status
 
-- **GBP:** Created, verification in progress by Terry from Liberty Hill. **Management URL:** <https://sites.google.com/view/paris-roofing-services> — must be logged into `parisroofingservicesoftx@gmail.com` before opening.
+- **GBP:** Created, verification in progress by Terry from Liberty Hill. **Public URL:** <https://g.page/parisroofingservices> · **Management:** <https://business.google.com> (login: `parisroofingservicesoftx@gmail.com`)
 - **Website:** Live at <https://brian7781.github.io/paris-roofing/>
 - **Citations:** Pending GBP verification, then BrightLocal submission
 - **Facebook Business Page:** ✅ Created. Owned by Richard's personal Facebook account, managed from the **Paris Roofing** Chrome profile.
@@ -115,4 +115,5 @@ Create a dedicated Chrome profile called **"Paris Roofing"** on this Mac, comple
 
 - **Live site:** <https://brian7781.github.io/paris-roofing/>
 - **Public repo:** <https://github.com/Brian7781/paris-roofing>
-- **GBP management (login as parisroofingservicesoftx@gmail.com first):** <https://sites.google.com/view/paris-roofing-services>
+- **GBP public:** <https://g.page/parisroofingservices>
+- **GBP management:** <https://business.google.com> (login: `parisroofingservicesoftx@gmail.com`)
