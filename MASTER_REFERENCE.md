@@ -103,6 +103,7 @@ Files explicitly ignored by `.gitignore`:
 - **Citations:** Pending GBP verification, then BrightLocal submission
 - **Facebook Business Page:** ✅ Active, info complete, connected to Instagram. **Page URL:** <https://www.facebook.com/profile.php?id=61574301045292> · Login: `parisroofingservicesoftx@gmail.com`
 - **Instagram Business Account:** ✅ Created. Username: `@parisroofingservices` · Profile: <https://instagram.com/parisroofingservices> · Category: Roofing Service · Login: `parisroofingservicesoftx@gmail.com` · ✅ Connected to Facebook Page · ✅ Profile picture uploaded.
+- **Nextdoor Business Page:** ✅ Created. **Page URL:** <https://nextdoor.com/page/paris-roofing-services-liberty-hill-tx>
 - **Chrome profile:** Dedicated **"Paris Roofing"** profile exists on Richard's Mac, kept separate from personal Chrome profiles.
 
 ### Next immediate step
