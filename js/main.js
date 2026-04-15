@@ -67,9 +67,6 @@ const showStormAlert = true;
   }
 
   // --- Tap-to-call on mobile ---
-  // All phone links already use tel:+15127403215 so mobile taps call directly.
-  // This block ensures any stray (512) 740-3215 text in the hero is wrapped
-  // in a tel: link on touch devices.
   if ('ontouchstart' in window) {
     document.querySelectorAll('.hero a[href^="tel:"]').forEach((el) => {
       el.setAttribute('data-touch', 'true');
@@ -79,4 +76,83 @@ const showStormAlert = true;
   // --- Auto-update copyright year ---
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // --- Scroll Reveal Animations ---
+  initScrollReveal();
+
+  function initScrollReveal() {
+    // Skip if IntersectionObserver is not supported
+    if (!('IntersectionObserver' in window)) return;
+
+    // Individual reveal targets (not staggered)
+    const singles = document.querySelectorAll(
+      '.section > .container > h2, ' +
+      '.section__lede, ' +
+      '.why-banner, ' +
+      '.storm__copy, ' +
+      '.contact__card, ' +
+      '.estimate-form, ' +
+      '.area__copy, ' +
+      '.contact h2, ' +
+      '.section--navy > .container > .center'
+    );
+    singles.forEach(function (el) {
+      el.classList.add('reveal');
+    });
+
+    // Staggered groups — children animate in sequence when parent enters viewport
+    var groups = document.querySelectorAll(
+      '.grid:not(.contact), .pillars'
+    );
+    groups.forEach(function (parent) {
+      var children = parent.children;
+      for (var i = 0; i < children.length; i++) {
+        children[i].classList.add('reveal');
+        children[i].style.setProperty('--i', i);
+      }
+      parent.classList.add('reveal-stagger');
+    });
+
+    // Cities get faster stagger (many items)
+    var citiesEl = document.querySelector('.cities');
+    if (citiesEl) {
+      var pills = citiesEl.children;
+      for (var i = 0; i < pills.length; i++) {
+        pills[i].classList.add('reveal');
+        pills[i].style.setProperty('--i', i);
+      }
+      citiesEl.classList.add('reveal-stagger');
+      citiesEl.classList.add('reveal-stagger--fast');
+    }
+
+    // Create the observer
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var target = entry.target;
+
+          // If it's a stagger parent, reveal all children
+          if (target.classList.contains('reveal-stagger')) {
+            var revealChildren = target.querySelectorAll('.reveal');
+            revealChildren.forEach(function (child) {
+              child.classList.add('revealed');
+            });
+          } else {
+            target.classList.add('revealed');
+          }
+
+          observer.unobserve(target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    // Observe all single targets
+    singles.forEach(function (el) { observer.observe(el); });
+    // Observe stagger group parents
+    groups.forEach(function (el) { observer.observe(el); });
+    if (citiesEl) observer.observe(citiesEl);
+  }
 })();
