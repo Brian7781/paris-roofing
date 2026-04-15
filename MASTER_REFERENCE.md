@@ -27,7 +27,7 @@ Public index of every file in this project and how they fit together. This file 
 Business Name:   Paris Roofing Services
 Owner:           Terry Paris
 Phone:           (512) 740-3215
-Website:         https://brian7781.github.io/paris-roofing/
+Website:         https://parisroofingservices.com/
 Base City:       Liberty Hill, TX  (service-area business — no street address published)
 Founded:         1976
 ```
@@ -99,7 +99,7 @@ Files explicitly ignored by `.gitignore`:
 ### Current status
 
 - **GBP:** Created, verification in progress by Terry from Liberty Hill. **Public URL:** <https://g.page/parisroofingservices> · **Management:** <https://business.google.com> (login: `parisroofingservicesoftx@gmail.com`)
-- **Website:** Live at <https://brian7781.github.io/paris-roofing/>
+- **Website:** Live at <https://parisroofingservices.com/>
 - **Citations:** Pending GBP verification, then BrightLocal submission
 - **Facebook Business Page:** ✅ Active, info complete, connected to Instagram. **Page URL:** <https://www.facebook.com/profile.php?id=61574301045292> · Login: `parisroofingservicesoftx@gmail.com`
 - **Instagram Business Account:** ✅ Created. Username: `@parisroofingservices` · Profile: <https://instagram.com/parisroofingservices> · Category: Roofing Service · Login: `parisroofingservicesoftx@gmail.com` · ✅ Connected to Facebook Page · ✅ Profile picture uploaded.
@@ -114,7 +114,7 @@ Create a dedicated Chrome profile called **"Paris Roofing"** on this Mac, comple
 
 ## Quick links
 
-- **Live site:** <https://brian7781.github.io/paris-roofing/>
+- **Live site:** <https://parisroofingservices.com/>
 - **Public repo:** <https://github.com/Brian7781/paris-roofing>
 - **GBP public:** <https://g.page/parisroofingservices>
 - **GBP management:** <https://business.google.com> (login: `parisroofingservicesoftx@gmail.com`)

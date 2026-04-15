@@ -4,8 +4,8 @@
 
 Marketing website for **Paris Roofing Services**, a Central Texas roofing contractor founded in 1976 by Terry Paris. Single-page static site designed to drive local SEO rankings and generate estimate requests. The business specializes in storm/hail damage repair and insurance claim assistance across the Austin metro and Hill Country.
 
-**Live URL:** https://brian7781.github.io/paris-roofing/
-**Target domain:** parisroofingservices.com (not yet registered)
+**Live URL:** https://parisroofingservices.com/
+**GitHub Pages:** brian7781.github.io/paris-roofing (redirects to custom domain)
 
 ## Business Identity
 
