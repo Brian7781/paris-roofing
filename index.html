@@ -129,18 +129,30 @@
     <!-- SECTION 1 — HERO -->
     <section class="hero">
       <div class="hero__overlay"></div>
-      <div class="container hero__inner">
-        <h1>Central Texas Roofing<br><span class="accent">Since 1976</span></h1>
-        <p class="hero__sub">Licensed. Insured. Guaranteed to Beat Any Written Estimate by <strong>$300</strong>.</p>
-        <div class="hero__ctas">
-          <a href="tel:+15127403215" class="btn btn--amber btn--lg">📞 Call Now · (512) 740-3215</a>
-          <a href="#contact" class="btn btn--ghost btn--lg">Get a Free Estimate</a>
+      <div class="container hero__inner hero__inner--split">
+        <div class="hero__text">
+          <h1>Central Texas Roofing<br><span class="accent">Since 1976</span></h1>
+          <p class="hero__sub">Licensed. Insured. Guaranteed to Beat Any Written Estimate by <strong>$300</strong>.</p>
+          <div class="hero__ctas">
+            <a href="tel:+15127403215" class="btn btn--amber btn--lg">📞 Call Now · (512) 740-3215</a>
+            <a href="#contact" class="btn btn--ghost btn--lg">Get a Free Estimate</a>
+          </div>
+          <ul class="trust-bar">
+            <li>✓ Licensed &amp; Insured</li>
+            <li>✓ Since 1976</li>
+            <li>✓ Beat Any Bid by $300</li>
+          </ul>
         </div>
-        <ul class="trust-bar">
-          <li>✓ Licensed &amp; Insured</li>
-          <li>✓ Since 1976</li>
-          <li>✓ Beat Any Bid by $300</li>
-        </ul>
+        <div class="hero__video-wrap">
+          <video class="hero__video" autoplay muted loop playsinline poster="images/hero.jpg">
+            <source src="images/terry_intro_web.mp4" type="video/mp4">
+          </video>
+          <button class="hero__sound-toggle" aria-label="Toggle sound" type="button">
+            <span class="hero__sound-icon hero__sound-icon--off">🔇</span>
+            <span class="hero__sound-icon hero__sound-icon--on">🔊</span>
+          </button>
+          <span class="hero__video-label">Meet Terry Paris</span>
+        </div>
       </div>
     </section>
 

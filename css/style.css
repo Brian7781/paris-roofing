@@ -481,6 +481,97 @@ body.has-alert .site-header { top: 0; }
   transform: translateY(-50%);
 }
 
+/* ── Hero Split Layout + Video ────────────────────────────────────────── */
+
+.hero__inner--split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .hero__inner--split {
+    grid-template-columns: 1.1fr 0.9fr;
+    text-align: left;
+  }
+  .hero__inner--split .hero__ctas { justify-content: flex-start; }
+  .hero__inner--split .trust-bar { justify-content: flex-start; }
+}
+
+.hero__text { position: relative; z-index: 3; }
+
+/* Video container */
+.hero__video-wrap {
+  position: relative;
+  z-index: 3;
+  max-width: 340px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: heroReveal 0.9s 0.6s var(--ease-out-expo) forwards;
+}
+@media (min-width: 800px) {
+  .hero__video-wrap { max-width: 380px; margin: 0 auto; }
+}
+
+/* The video element — rounded portrait shape */
+.hero__video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    0 0 0 3px rgba(200, 134, 10, 0.3);
+  display: block;
+}
+
+/* Sound toggle */
+.hero__sound-toggle {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(22, 32, 56, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s var(--ease-out-expo);
+  z-index: 4;
+  padding: 0;
+  line-height: 1;
+}
+.hero__sound-toggle:hover {
+  background: rgba(200, 134, 10, 0.7);
+  border-color: var(--amber);
+  transform: scale(1.08);
+}
+.hero__sound-icon { display: none; }
+.hero__sound-icon--off { display: inline; }
+.hero__video-wrap.sound-on .hero__sound-icon--off { display: none; }
+.hero__video-wrap.sound-on .hero__sound-icon--on { display: inline; }
+
+/* "Meet Terry Paris" label */
+.hero__video-label {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(240, 232, 212, 0.7);
+}
+
 /* ── Sections ────────────────────────────────────────────────────────── */
 
 .section {

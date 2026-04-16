@@ -73,6 +73,23 @@ const showStormAlert = true;
     });
   }
 
+  // --- Hero video sound toggle ---
+  var heroVideo = document.querySelector('.hero__video');
+  var soundBtn = document.querySelector('.hero__sound-toggle');
+  var videoWrap = document.querySelector('.hero__video-wrap');
+  if (heroVideo && soundBtn && videoWrap) {
+    soundBtn.addEventListener('click', function() {
+      heroVideo.muted = !heroVideo.muted;
+      videoWrap.classList.toggle('sound-on', !heroVideo.muted);
+      if (typeof gtag === 'function') {
+        gtag('event', 'video_sound_toggle', {
+          'event_category': 'engagement',
+          'event_label': heroVideo.muted ? 'muted' : 'unmuted'
+        });
+      }
+    });
+  }
+
   // --- GA4 call button click tracking ---
   document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
     el.addEventListener('click', function() {

@@ -2,5 +2,10 @@
 PRIVATE_CREDENTIALS.txt
 CITATION_SUBMISSIONS.md
 
+# Large original video (only the compressed _web.mp4 is committed)
+images/terry_intro.mp4
+
 # macOS
 .DS_Store
+.gstack/
+.directory_password.txt
