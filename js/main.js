@@ -73,6 +73,16 @@ const showStormAlert = true;
     });
   }
 
+  // --- GA4 call button click tracking ---
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'call_button_click', {
+        'event_category': 'engagement',
+        'event_label': 'phone_call'
+      });
+    });
+  });
+
   // --- Auto-update copyright year ---
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
