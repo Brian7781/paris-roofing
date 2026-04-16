@@ -492,7 +492,7 @@ body.has-alert .site-header { top: 0; }
 }
 @media (min-width: 800px) {
   .hero__inner--split {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1.2fr auto;
     text-align: left;
   }
   .hero__inner--split .hero__ctas { justify-content: flex-start; }
@@ -511,7 +511,7 @@ body.has-alert .site-header { top: 0; }
   animation: heroReveal 0.9s 0.6s var(--ease-out-expo) forwards;
 }
 @media (min-width: 800px) {
-  .hero__video-wrap { max-width: 380px; margin: 0 auto; }
+  .hero__video-wrap { max-width: 300px; margin: 0 0 0 auto; }
 }
 
 /* The video element — rounded portrait shape */
