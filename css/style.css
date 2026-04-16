@@ -554,8 +554,10 @@ body.has-alert .site-header { top: 0; }
   border-color: var(--amber);
   transform: translate(-50%, -50%) scale(1.1);
 }
-.hero__video-wrap.is-playing .hero__play-btn { display: none; }
+.hero__video-wrap.is-playing .hero__play-btn { opacity: 0; pointer-events: none; }
 .hero__video-wrap.is-playing .hero__video-label { display: none; }
+.hero__video-wrap.is-playing:hover .hero__play-btn { opacity: 1; pointer-events: auto; }
+.hero__video-wrap.is-playing .hero__video { cursor: pointer; }
 
 /* "Meet Terry Paris" label */
 .hero__video-label {

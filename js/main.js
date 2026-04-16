@@ -73,21 +73,35 @@ const showStormAlert = true;
     });
   }
 
-  // --- Hero video play button ---
+  // --- Hero video play/pause ---
   var heroVideo = document.querySelector('.hero__video');
   var playBtn = document.querySelector('.hero__play-btn');
   var videoWrap = document.querySelector('.hero__video-wrap');
   if (heroVideo && playBtn && videoWrap) {
     playBtn.addEventListener('click', function() {
-      heroVideo.muted = false;
-      heroVideo.play();
-      videoWrap.classList.add('is-playing');
-      if (typeof gtag === 'function') {
-        gtag('event', 'video_play', {
-          'event_category': 'engagement',
-          'event_label': 'hero_video'
-        });
+      if (videoWrap.classList.contains('is-playing')) {
+        heroVideo.pause();
+        heroVideo.muted = true;
+        videoWrap.classList.remove('is-playing');
+      } else {
+        heroVideo.muted = false;
+        heroVideo.play();
+        videoWrap.classList.add('is-playing');
+        if (typeof gtag === 'function') {
+          gtag('event', 'video_play', {
+            'event_category': 'engagement',
+            'event_label': 'hero_video'
+          });
+        }
       }
+    });
+    // Show play button again when video ends
+    heroVideo.addEventListener('ended', function() {
+      videoWrap.classList.remove('is-playing');
+    });
+    // Also pause/resume on tapping the video itself
+    heroVideo.addEventListener('click', function() {
+      playBtn.click();
     });
   }
 
