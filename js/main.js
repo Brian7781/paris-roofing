@@ -73,20 +73,50 @@ const showStormAlert = true;
     });
   }
 
-  // --- Hero video sound toggle ---
+  // --- Hero video sound toggle + auto-unmute on first interaction ---
   var heroVideo = document.querySelector('.hero__video');
   var soundBtn = document.querySelector('.hero__sound-toggle');
   var videoWrap = document.querySelector('.hero__video-wrap');
   if (heroVideo && soundBtn && videoWrap) {
-    soundBtn.addEventListener('click', function() {
-      heroVideo.muted = !heroVideo.muted;
-      videoWrap.classList.toggle('sound-on', !heroVideo.muted);
+    function unmuteVideo() {
+      if (!heroVideo.muted) return;
+      heroVideo.muted = false;
+      videoWrap.classList.add('sound-on');
       if (typeof gtag === 'function') {
         gtag('event', 'video_sound_toggle', {
           'event_category': 'engagement',
-          'event_label': heroVideo.muted ? 'muted' : 'unmuted'
+          'event_label': 'auto_unmuted'
         });
       }
+    }
+    function muteVideo() {
+      heroVideo.muted = true;
+      videoWrap.classList.remove('sound-on');
+    }
+    function toggleSound() {
+      if (heroVideo.muted) { unmuteVideo(); } else { muteVideo(); }
+    }
+
+    // Manual toggle on button click
+    soundBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleSound();
+      removeAutoUnmute();
+    });
+
+    // Auto-unmute on first user interaction anywhere on page
+    var autoUnmuteEvents = ['click', 'scroll', 'touchstart', 'keydown'];
+    function handleAutoUnmute() {
+      unmuteVideo();
+      removeAutoUnmute();
+    }
+    function removeAutoUnmute() {
+      autoUnmuteEvents.forEach(function(evt) {
+        document.removeEventListener(evt, handleAutoUnmute, { capture: true });
+      });
+    }
+    autoUnmuteEvents.forEach(function(evt) {
+      document.addEventListener(evt, handleAutoUnmute, { capture: true, passive: true });
     });
   }
 
